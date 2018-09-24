@@ -6,6 +6,6 @@ public interface IPersistenzController {
 	void delete(Object obj);
 	void update(Object obj);
 	void search(Object obj);
-	 
+	
 	
 }
