@@ -5,7 +5,7 @@ import de.i3a.univerwaltung.model.Fach;
 import de.i3a.univerwaltung.model.Notenuebersicht;
 import de.i3a.univerwaltung.model.Student;
 
-public class StudentFactory implements IFactory {
+public class StudentFactory extends PersonFactory implements IFactory {
 
 	private Student mStudent;
 
@@ -24,6 +24,7 @@ public class StudentFactory implements IFactory {
 		this.mStudent.setNotenuebersicht(notenuebersicht);
 		return this;
 	}
+	
 	
 	@Override
 	public Student build() {
