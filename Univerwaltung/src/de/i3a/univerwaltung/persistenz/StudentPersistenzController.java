@@ -8,19 +8,16 @@ public class StudentPersistenzController implements IPersistenzController{
 	@Override
 	public void insert(Object obj) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
 	public void delete(Object obj) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
 	public void update(Object obj) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub	
 	}
 
 	@Override
