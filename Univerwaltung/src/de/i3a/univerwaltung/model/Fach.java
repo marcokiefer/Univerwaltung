@@ -4,12 +4,10 @@ public class Fach {
     private int id;
     private String bezeichnung;
 
-    public Fach(int id, String bezeichnung) {
-        this.id = id;
-        this.bezeichnung = bezeichnung;
-    }
+    public Fach() {
+	}
 
-    public int getId() {
+	public int getId() {
         return id;
     }
 

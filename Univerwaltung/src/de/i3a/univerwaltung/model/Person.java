@@ -11,19 +11,6 @@ public class Person {
     private Adresse adresse;
     private String titel;
     private String geschlecht;
-    private String langname;
-		
-
-    public Person(int id, String name, String vorname, Date geburtsdatum, Adresse adresse, String titel, String geschlecht) {
-        this.id = id;
-        this.name = name;
-        this.vorname = vorname;
-        this.geburtsdatum = geburtsdatum;
-        this.adresse = adresse;
-        this.titel = titel;
-        this.geschlecht = geschlecht;
-    }
-    
 
 	public Person() {
     }
@@ -84,14 +71,7 @@ public class Person {
         this.geschlecht = geschlecht;
     }
     
-    public String getLangname() {
-		return langname;
-	}
-    
-    public void setLangname(String langname) {
-		this.langname = langname;
-	}
-
+ 
     @Override
     public String toString() {
         //String anrede = "weiblich".equalsIgnoreCase(geschlecht)? "Frau ":"Herr ";

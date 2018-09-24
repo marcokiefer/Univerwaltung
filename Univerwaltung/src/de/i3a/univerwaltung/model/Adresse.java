@@ -1,26 +1,21 @@
 package de.i3a.univerwaltung.model;
 
 public class Adresse {
-    private int ID;
+    private int id;
     private String strasse;
-    private int hausnummer;
+    private String hausnummer;
     private String plz;
     private String ort;
 
-    public Adresse(int ID, String strasse, int hausnummer, String plz, String ort) {
-        this.ID = ID;
-        this.strasse = strasse;
-        this.hausnummer = hausnummer;
-        this.plz = plz;
-        this.ort = ort;
+    public Adresse() {
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setID(int id) {
+        this.id = id;
     }
 
     public String getStrasse() {
@@ -31,11 +26,11 @@ public class Adresse {
         this.strasse = strasse;
     }
 
-    public int getHausnummer() {
+    public String getHausnummer() {
         return hausnummer;
     }
 
-    public void setHausnummer(int hausnummer) {
+    public void setHausnummer(String hausnummer) {
         this.hausnummer = hausnummer;
     }
 
@@ -59,6 +54,6 @@ public class Adresse {
     public String toString() {
         String ausgabe =  " aus " + ort;
         return ausgabe;
-
+ 
     }
 }
