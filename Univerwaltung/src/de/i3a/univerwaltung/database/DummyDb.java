@@ -13,6 +13,7 @@ import de.i3a.univerwaltung.model.Student;
 import de.i3a.univerwaltung.utils.DateHelper;
 
 public class DummyDb {
+	
 	private List<Student> studenten = new ArrayList<>();
 	private List<Person> personen = new ArrayList<>();
 	private List<Adresse> adressen = new ArrayList<>();

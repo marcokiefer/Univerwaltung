@@ -1,5 +1,7 @@
 package de.i3a.univerwaltung.controller;
 
+import java.util.List;
+
 import de.i3a.univerwaltung.model.Student;
 
 public interface IStudentPersistenceController {
@@ -8,6 +10,6 @@ public interface IStudentPersistenceController {
 	
 	Student selectByMatrikelnummer(String matrikelnummer);
 	
-	Student selectByNameVorname(String name, String vorname);
+	List<Student> selectByNameVorname(String name, String vorname);
 
 }
