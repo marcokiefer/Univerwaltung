@@ -1,4 +1,4 @@
-package de.i3a.univerwaltung.persistenz;
+package de.i3a.univerwaltung.database;
 
 import de.i3a.univerwaltung.model.Student;
 

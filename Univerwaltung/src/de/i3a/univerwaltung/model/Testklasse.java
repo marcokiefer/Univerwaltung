@@ -5,35 +5,26 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.regex.Pattern;
 
+import de.i3a.univerwaltung.database.IPersistenzController;
+import de.i3a.univerwaltung.database.StudentPersistenzController;
 import de.i3a.univerwaltung.factory.IFactory;
 import de.i3a.univerwaltung.factory.PersonFactory;
 import de.i3a.univerwaltung.factory.StudentFactory;
-import de.i3a.univerwaltung.persistenz.IPersistenzController;
-import de.i3a.univerwaltung.persistenz.StudentPersistenzController;
 
 public class Testklasse {
     public static void main(String[] args) {
-    	Date date = new Date(1982,3,12);
     	// Notenuebersicht
         
-    	
     	// Faecher erzeugen
-    	
         
         // Adressen erzeugen
-        
         
         // Studenten erzeugen
         
         
-        PersonFactory personFactory = new PersonFactory();
-        Person studentMichi =  personFactory.withName("Test").withVorname("Michi").build();
-        
-        IPersistenzController co = new StudentPersistenzController();
-        StudentFactory studentFactory = new StudentFactory();
-        
-        Student student = studentFactory.withMatriklnummer("123458").build();
-		co.search(student);
+    	StudentFactory studentFactory = new StudentFactory();
+    	Student student1 = studentFactory.withMatriklnummer("123423").build();
+    	student1 = studentFactory.withName("Mueller").build();
         
         
         // Datumformat
