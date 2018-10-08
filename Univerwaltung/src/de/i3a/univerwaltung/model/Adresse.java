@@ -1,59 +1,55 @@
 package de.i3a.univerwaltung.model;
 
 public class Adresse {
-    private int id;
-    private String strasse;
-    private String hausnummer;
-    private String plz;
-    private String ort;
+	private int id;
+	private String strasse;
+	private String hausnummer;
+	private String plz;
+	private String ort;
 
-    public Adresse() {
-    }
+	public Adresse() {
 
-    public int getId() {
-        return id;
-    }
+		// TODO Auto-generated constructor stub
+	}
 
-    public void setID(int id) {
-        this.id = id;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public String getStrasse() {
-        return strasse;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public void setStrasse(String strasse) {
-        this.strasse = strasse;
-    }
+	public String getStrasse() {
+		return strasse;
+	}
 
-    public String getHausnummer() {
-        return hausnummer;
-    }
+	public void setStrasse(String strasse) {
+		this.strasse = strasse;
+	}
 
-    public void setHausnummer(String hausnummer) {
-        this.hausnummer = hausnummer;
-    }
+	public String getHausnummer() {
+		return hausnummer;
+	}
 
-    public String getPlz() {
-        return plz;
-    }
+	public void setHausnummer(String hausnummer) {
+		this.hausnummer = hausnummer;
+	}
 
-    public void setPlz(String plz) {
-        this.plz = plz;
-    }
+	public String getPlz() {
+		return plz;
+	}
 
-    public String getOrt() {
-        return ort;
-    }
+	public void setPlz(String plz) {
+		this.plz = plz;
+	}
 
-    public void setOrt(String ort) {
-        this.ort = ort;
-    }
+	public String getOrt() {
+		return ort;
+	}
 
-    @Override
-    public String toString() {
-        String ausgabe =  " aus " + ort;
-        return ausgabe;
- 
-    }
+	public void setOrt(String ort) {
+		this.ort = ort;
+	}
+
 }

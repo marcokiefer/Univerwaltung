@@ -1,48 +1,40 @@
 package de.i3a.univerwaltung.model;
 
 import java.util.List;
-import java.util.Date;
 
-public class Student extends Person{
-    private String matrNr;
-    private List<Fach> fachliste;
-    private Notenuebersicht notenuebersicht;
+public class Student extends Person {
+	private String matrikelnummer;
+	private List<Fach> faecher;
+	private Notenuebersicht notenuebersicht;
 
-    public Student() {
-    	super();
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public String getMatrNr() {
-        return matrNr;
-    }
-
-    public void setMatrNr(String matrNr) {
-        this.matrNr = matrNr;
-    }
-
-    public List<Fach> getFachliste() {
-		return fachliste;
+	public String getMatrikelnummer() {
+		return matrikelnummer;
 	}
 
-	public void setFachliste(List<Fach> fachliste) {
-		this.fachliste = fachliste;
+	public void setMatrikelnummer(String matrikelnummer) {
+		this.matrikelnummer = matrikelnummer;
+	}
+
+	public List<Fach> getFaecher() {
+		return faecher;
+	}
+
+	public void setFaecher(List<Fach> faecher) {
+		this.faecher = faecher;
 	}
 
 	public Notenuebersicht getNotenuebersicht() {
-        return notenuebersicht;
-    }
+		return notenuebersicht;
+	}
 
-    public void setNotenuebersicht(Notenuebersicht notenuebersicht) {
-        this.notenuebersicht = notenuebersicht;
-    }
-    
-    @Override
-    public String toString() {
-    	// TODO Auto-generated method stub
-    	String ausgabe = " Student: ";
-    	//return super.toString();
-    	return ausgabe + super.toString();
-    }
+	public void setNotenuebersicht(Notenuebersicht notenuebersicht) {
+		this.notenuebersicht = notenuebersicht;
+	}
 
-
+	
 }

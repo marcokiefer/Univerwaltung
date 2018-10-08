@@ -5,9 +5,10 @@ public class Fach {
     private String bezeichnung;
 
     public Fach() {
-	}
+        
+    }
 
-	public int getId() {
+    public int getId() {
         return id;
     }
 

@@ -6,14 +6,14 @@ public class Pruefung {
     private int id;
     private Fach fach;
     private Date datum;
-    private double Ergebis;
+    private double ergebnis;
     private Student student;
 
-    public Pruefung(int id, Fach fach, Date datum, double ergebis, Student student) {
+    public Pruefung(int id, Fach fach, Date datum, double ergebnis, Student student) {
         this.id = id;
         this.fach = fach;
         this.datum = datum;
-        Ergebis = ergebis;
+        this.ergebnis = ergebnis;
         this.student = student;
     }
 
@@ -21,20 +21,32 @@ public class Pruefung {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Fach getFach() {
         return fach;
+    }
+
+    public void setFach(Fach fach) {
+        this.fach = fach;
     }
 
     public Date getDatum() {
         return datum;
     }
 
-    public double getErgebis() {
-        return Ergebis;
+    public void setDatum(Date datum) {
+        this.datum = datum;
     }
 
-    public void setErgebis(double ergebis) {
-        Ergebis = ergebis;
+    public double getErgebnis() {
+        return ergebnis;
+    }
+
+    public void setErgebnis(double ergebnis) {
+        this.ergebnis = ergebnis;
     }
 
     public Student getStudent() {

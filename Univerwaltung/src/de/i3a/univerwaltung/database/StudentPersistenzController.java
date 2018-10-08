@@ -1,36 +1,36 @@
 package de.i3a.univerwaltung.database;
 
+import de.i3a.univerwaltung.model.Student;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import de.i3a.univerwaltung.controller.IStudentPersistenceController;
-import de.i3a.univerwaltung.model.Student;
-
-public class StudentPersistenzController implements IStudentPersistenceController{
+public class StudentPersistenzController implements IStudentPersistenzController {
 
 	private DummyDb database;
-	private List<Student> students;
-	
+	private List<Student> studenten;
+
 	public StudentPersistenzController() {
 		database = new DummyDb();
 		database.init();
-		this.students = database.getStudenten();
+		this.studenten = database.getStudenten();
 	}
-	
+
 	@Override
 	public Student selectById(int id) {
-		for (Student s : this.students) {
-			if(s.getID() == id) {
+		for (Student s : this.studenten) {
+			if (s.getId() == id) {
 				return s;
 			}
 		}
 		return null;
+
 	}
 
 	@Override
 	public Student selectByMatrikelnummer(String matrikelnummer) {
-		for (Student s : this.students) {
-			if(s.getMatrNr() == matrikelnummer) {
+		for (Student s : studenten) {
+			if (s.getMatrikelnummer() == matrikelnummer) {
 				return s;
 			}
 		}
@@ -40,14 +40,13 @@ public class StudentPersistenzController implements IStudentPersistenceControlle
 	@Override
 	public List<Student> selectByNameVorname(String name, String vorname) {
 		List<Student> result = new ArrayList<>();
-		for (Student s : this.students) {
-			if(s.getName().equals(name) && s.getVorname().equals(vorname)) {
+		for (Student s : studenten) {
+			if (s.getName().equals(name) && s.getVorname().equals(vorname)) {
 				result.add(s);
 			}
 		}
 		return result;
+
 	}
-
-
 
 }

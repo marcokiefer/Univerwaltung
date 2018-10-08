@@ -2,27 +2,28 @@ package de.i3a.univerwaltung.factory;
 
 import de.i3a.univerwaltung.model.Fach;
 
-public class FachFactory implements IFactory{
+public class FachFactory implements IFactory {
+
 	private Fach mFach;
-	
-	public FachFactory withID(int id) {
-		build();
+
+	public FachFactory withId(int id) {
 		this.mFach.setId(id);
 		return this;
 	}
+	
 	public FachFactory withBezeichnung(String bezeichnung) {
-		build();
 		this.mFach.setBezeichnung(bezeichnung);
 		return this;
 	}
-
+	
 	@Override
 	public Fach build() {
-		if(this.mFach == null) {
+		// TODO Auto-generated method stub
+		if (this.mFach == null) {
 			this.mFach = new Fach();
+
 		}
 		return this.mFach;
 	}
 
-	
 }
